@@ -1,0 +1,1832 @@
+(window["webpackJsonp"] = window["webpackJsonp"] || []).push([["main"],{
+
+/***/ "./node_modules/css-loader/index.js?!./node_modules/postcss-loader/src/index.js?!./src/App.css":
+/*!************************************************************************************************************!*\
+  !*** ./node_modules/css-loader??ref--6-oneOf-3-1!./node_modules/postcss-loader/src??postcss!./src/App.css ***!
+  \************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+var escape = __webpack_require__(/*! ../node_modules/css-loader/lib/url/escape.js */ "./node_modules/css-loader/lib/url/escape.js");
+exports = module.exports = __webpack_require__(/*! ../node_modules/css-loader/lib/css-base.js */ "./node_modules/css-loader/lib/css-base.js")(false);
+// imports
+
+
+// module
+exports.push([module.i, "body {\n  min-height: 100%;\n}\n\nimg {\n  width: 100%;\n}\n\n.landing {\n  position: relative;\n  background: url(" + escape(__webpack_require__(/*! ./components/img/17.JPG */ "./src/components/img/17.JPG")) + ") no-repeat;\n  background-size: cover;\n  background-position: center;\n  height: 100vh;\n  margin-top: -24px;\n  margin-bottom: -50px;\n}\n.suppliers {\n  position: relative;\n  background: url(" + escape(__webpack_require__(/*! ./components/img/supplierrelationships.jpg */ "./src/components/img/supplierrelationships.jpg")) + ") no-repeat;\n  background-size: cover;\n  background-position: center;\n  height: 100vh;\n  margin-top: -24px;\n  margin-bottom: -50px;\n}\n\n.landing-inner {\n  padding-top: 80px;\n}\n\n.dark-overlay {\n  background-color: rgba(0, 0, 0, 0.7);\n  position: absolute;\n  top: 0;\n  left: 0;\n  width: 100%;\n  height: 100%;\n}\n\n.card-form {\n  opacity: 0.9;\n}\n\n.latest-profiles-img {\n  width: 40px;\n  height: 40px;\n}\n\n.form-control::-webkit-input-placeholder {\n  color: #bbb !important;\n}\n\n.form-control::-ms-input-placeholder {\n  color: #bbb !important;\n}\n\n.form-control::placeholder {\n  color: #bbb !important;\n}\n\n.btn-icon {\n  min-width: 110px;\n  display: inline-block;\n}\n\n/* .footer {\n  position: absolute;\n  bottom: 0;\n  left: 0;\n  width: 100%;\n} */\n", ""]);
+
+// exports
+
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/index.js?!./node_modules/postcss-loader/src/index.js?!./src/index.css":
+/*!**************************************************************************************************************!*\
+  !*** ./node_modules/css-loader??ref--6-oneOf-3-1!./node_modules/postcss-loader/src??postcss!./src/index.css ***!
+  \**************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(/*! ../node_modules/css-loader/lib/css-base.js */ "./node_modules/css-loader/lib/css-base.js")(false);
+// imports
+
+
+// module
+exports.push([module.i, "body {\n  margin: 0;\n  padding: 0;\n  font-family: -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Roboto\", \"Oxygen\",\n    \"Ubuntu\", \"Cantarell\", \"Fira Sans\", \"Droid Sans\", \"Helvetica Neue\",\n    sans-serif;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n}\n\ncode {\n  font-family: source-code-pro, Menlo, Monaco, Consolas, \"Courier New\",\n    monospace;\n}\n", ""]);
+
+// exports
+
+
+/***/ }),
+
+/***/ "./src/App.css":
+/*!*********************!*\
+  !*** ./src/App.css ***!
+  \*********************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+
+var content = __webpack_require__(/*! !../node_modules/css-loader??ref--6-oneOf-3-1!../node_modules/postcss-loader/src??postcss!./App.css */ "./node_modules/css-loader/index.js?!./node_modules/postcss-loader/src/index.js?!./src/App.css");
+
+if(typeof content === 'string') content = [[module.i, content, '']];
+
+var transform;
+var insertInto;
+
+
+
+var options = {"hmr":true}
+
+options.transform = transform
+options.insertInto = undefined;
+
+var update = __webpack_require__(/*! ../node_modules/style-loader/lib/addStyles.js */ "./node_modules/style-loader/lib/addStyles.js")(content, options);
+
+if(content.locals) module.exports = content.locals;
+
+if(true) {
+	module.hot.accept(/*! !../node_modules/css-loader??ref--6-oneOf-3-1!../node_modules/postcss-loader/src??postcss!./App.css */ "./node_modules/css-loader/index.js?!./node_modules/postcss-loader/src/index.js?!./src/App.css", function() {
+		var newContent = __webpack_require__(/*! !../node_modules/css-loader??ref--6-oneOf-3-1!../node_modules/postcss-loader/src??postcss!./App.css */ "./node_modules/css-loader/index.js?!./node_modules/postcss-loader/src/index.js?!./src/App.css");
+
+		if(typeof newContent === 'string') newContent = [[module.i, newContent, '']];
+
+		var locals = (function(a, b) {
+			var key, idx = 0;
+
+			for(key in a) {
+				if(!b || a[key] !== b[key]) return false;
+				idx++;
+			}
+
+			for(key in b) idx--;
+
+			return idx === 0;
+		}(content.locals, newContent.locals));
+
+		if(!locals) throw new Error('Aborting CSS HMR due to changed css-modules locals.');
+
+		update(newContent);
+	});
+
+	module.hot.dispose(function() { update(); });
+}
+
+/***/ }),
+
+/***/ "./src/App.js":
+/*!********************!*\
+  !*** ./src/App.js ***!
+  \********************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var C_Users_Gerain_Documents_Univer_DB_StockControl_client_node_modules_babel_runtime_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/classCallCheck */ "./node_modules/@babel/runtime/helpers/esm/classCallCheck.js");
+/* harmony import */ var C_Users_Gerain_Documents_Univer_DB_StockControl_client_node_modules_babel_runtime_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/createClass */ "./node_modules/@babel/runtime/helpers/esm/createClass.js");
+/* harmony import */ var C_Users_Gerain_Documents_Univer_DB_StockControl_client_node_modules_babel_runtime_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/possibleConstructorReturn */ "./node_modules/@babel/runtime/helpers/esm/possibleConstructorReturn.js");
+/* harmony import */ var C_Users_Gerain_Documents_Univer_DB_StockControl_client_node_modules_babel_runtime_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/getPrototypeOf */ "./node_modules/@babel/runtime/helpers/esm/getPrototypeOf.js");
+/* harmony import */ var C_Users_Gerain_Documents_Univer_DB_StockControl_client_node_modules_babel_runtime_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/inherits */ "./node_modules/@babel/runtime/helpers/esm/inherits.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/es/index.js");
+/* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! react-redux */ "./node_modules/react-redux/es/index.js");
+/* harmony import */ var _store__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./store */ "./src/store.js");
+/* harmony import */ var _components_layouts_Navbar__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./components/layouts/Navbar */ "./src/components/layouts/Navbar.js");
+/* harmony import */ var _components_layouts_Footer__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./components/layouts/Footer */ "./src/components/layouts/Footer.js");
+/* harmony import */ var _components_layouts_Landing__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./components/layouts/Landing */ "./src/components/layouts/Landing.js");
+/* harmony import */ var _components_invoices_InvoiceMenu__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./components/invoices/InvoiceMenu */ "./src/components/invoices/InvoiceMenu.js");
+/* harmony import */ var _components_suppliers_SuppliersOptions__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./components/suppliers/SuppliersOptions */ "./src/components/suppliers/SuppliersOptions.js");
+/* harmony import */ var _components_supplier_AddSupplier__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./components/supplier/AddSupplier */ "./src/components/supplier/AddSupplier.js");
+/* harmony import */ var _App_css__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./App.css */ "./src/App.css");
+/* harmony import */ var _App_css__WEBPACK_IMPORTED_MODULE_15___default = /*#__PURE__*/__webpack_require__.n(_App_css__WEBPACK_IMPORTED_MODULE_15__);
+
+
+
+
+
+var _jsxFileName = "C:\\Users\\Gerain\\Documents\\Univer\\DB\\StockControl\\client\\src\\App.js";
+
+
+
+
+
+
+
+
+
+
+
+
+var App =
+/*#__PURE__*/
+function (_Component) {
+  Object(C_Users_Gerain_Documents_Univer_DB_StockControl_client_node_modules_babel_runtime_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_4__["default"])(App, _Component);
+
+  function App() {
+    Object(C_Users_Gerain_Documents_Univer_DB_StockControl_client_node_modules_babel_runtime_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_0__["default"])(this, App);
+
+    return Object(C_Users_Gerain_Documents_Univer_DB_StockControl_client_node_modules_babel_runtime_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_2__["default"])(this, Object(C_Users_Gerain_Documents_Univer_DB_StockControl_client_node_modules_babel_runtime_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_3__["default"])(App).apply(this, arguments));
+  }
+
+  Object(C_Users_Gerain_Documents_Univer_DB_StockControl_client_node_modules_babel_runtime_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_1__["default"])(App, [{
+    key: "render",
+    value: function render() {
+      return react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(react_redux__WEBPACK_IMPORTED_MODULE_7__["Provider"], {
+        store: _store__WEBPACK_IMPORTED_MODULE_8__["default"],
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 18
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_6__["BrowserRouter"], {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 19
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("div", {
+        className: "App",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 20
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(_components_layouts_Navbar__WEBPACK_IMPORTED_MODULE_9__["default"], {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 21
+        },
+        __self: this
+      }), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_6__["Route"], {
+        exact: true,
+        path: "/",
+        component: _components_layouts_Landing__WEBPACK_IMPORTED_MODULE_11__["default"],
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 22
+        },
+        __self: this
+      }), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("div", {
+        className: "contaioner",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 23
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_6__["Route"], {
+        exact: true,
+        path: "/invoices",
+        component: _components_invoices_InvoiceMenu__WEBPACK_IMPORTED_MODULE_12__["default"],
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 24
+        },
+        __self: this
+      }), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_6__["Route"], {
+        exact: true,
+        path: "/suppliers",
+        component: _components_suppliers_SuppliersOptions__WEBPACK_IMPORTED_MODULE_13__["default"],
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 25
+        },
+        __self: this
+      }), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_6__["Route"], {
+        exact: true,
+        path: "/suppliers/add",
+        component: _components_supplier_AddSupplier__WEBPACK_IMPORTED_MODULE_14__["default"],
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 26
+        },
+        __self: this
+      })), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(_components_layouts_Footer__WEBPACK_IMPORTED_MODULE_10__["default"], {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 28
+        },
+        __self: this
+      }))));
+    }
+  }]);
+
+  return App;
+}(react__WEBPACK_IMPORTED_MODULE_5__["Component"]);
+
+/* harmony default export */ __webpack_exports__["default"] = (App);
+
+/***/ }),
+
+/***/ "./src/actions/auxActions.js":
+/*!***********************************!*\
+  !*** ./src/actions/auxActions.js ***!
+  \***********************************/
+/*! exports provided: createNewAddress, createNewBankDetails */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "createNewAddress", function() { return createNewAddress; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "createNewBankDetails", function() { return createNewBankDetails; });
+/* harmony import */ var _types__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./types */ "./src/actions/types.js");
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_1__);
+
+
+var createNewAddress = function createNewAddress(address, callback) {
+  return function (dispatch) {
+    axios__WEBPACK_IMPORTED_MODULE_1___default.a.post('/api/addresses/', address, callback).then(function (res) {
+      console.log(res);
+      dispatch({
+        type: _types__WEBPACK_IMPORTED_MODULE_0__["GET_ADDRESS"],
+        payload: res.data
+      });
+    }).catch(function (err) {
+      dispatch({
+        type: _types__WEBPACK_IMPORTED_MODULE_0__["GET_ERRORS_ADDRESS"],
+        payload: err.response.data
+      });
+    });
+  };
+};
+var createNewBankDetails = function createNewBankDetails(address, callback) {
+  return function (dispatch) {
+    axios__WEBPACK_IMPORTED_MODULE_1___default.a.post('/api/bankdetails/', address).then(function (res) {
+      callback(res.data);
+    }).catch(function (err) {
+      dispatch({
+        type: _types__WEBPACK_IMPORTED_MODULE_0__["GET_ERRORS_BANK_DETAILS"],
+        payload: err.response.data
+      });
+      callback();
+    });
+  };
+};
+
+/***/ }),
+
+/***/ "./src/actions/types.js":
+/*!******************************!*\
+  !*** ./src/actions/types.js ***!
+  \******************************/
+/*! exports provided: GET_ERRORS_ADDRESS, GET_ERRORS_BANK_DETAILS, TEST_DISPATCH, GET_ADDRESS */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "GET_ERRORS_ADDRESS", function() { return GET_ERRORS_ADDRESS; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "GET_ERRORS_BANK_DETAILS", function() { return GET_ERRORS_BANK_DETAILS; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "TEST_DISPATCH", function() { return TEST_DISPATCH; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "GET_ADDRESS", function() { return GET_ADDRESS; });
+var GET_ERRORS_ADDRESS = 'GET_ERRORS_ADDRESS';
+var GET_ERRORS_BANK_DETAILS = 'GET_ERRORS_BANK_DETAILS';
+var TEST_DISPATCH = 'TEST_DISPATCH';
+var GET_ADDRESS = 'GET_ADDRESS';
+
+/***/ }),
+
+/***/ "./src/components/common/IconButton.js":
+/*!*********************************************!*\
+  !*** ./src/components/common/IconButton.js ***!
+  \*********************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var classnames__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! classnames */ "./node_modules/classnames/index.js");
+/* harmony import */ var classnames__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(classnames__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/es/index.js");
+var _jsxFileName = "C:\\Users\\Gerain\\Documents\\Univer\\DB\\StockControl\\client\\src\\components\\common\\IconButton.js";
+
+
+
+
+
+var IconButton = function IconButton(_ref) {
+  var linkTo = _ref.linkTo,
+      additionalClasses = _ref.additionalClasses,
+      iconSize = _ref.iconSize,
+      iconName = _ref.iconName,
+      buttonText = _ref.buttonText;
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_3__["Link"], {
+    to: linkTo,
+    className: classnames__WEBPACK_IMPORTED_MODULE_2___default()('btn btn-icon btn-lg btn-light', additionalClasses),
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 14
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
+    className: classnames__WEBPACK_IMPORTED_MODULE_2___default()(iconSize, iconName),
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 18
+    },
+    __self: this
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 19
+    },
+    __self: this
+  }), " ", buttonText);
+};
+
+IconButton.propTypes = {
+  linkTo: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.string.isRequired,
+  additionalClasses: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.string,
+  iconSize: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.string,
+  iconName: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.string.isRequired,
+  buttonText: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.string
+};
+/* harmony default export */ __webpack_exports__["default"] = (IconButton);
+
+/***/ }),
+
+/***/ "./src/components/common/InputGroup.js":
+/*!*********************************************!*\
+  !*** ./src/components/common/InputGroup.js ***!
+  \*********************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var classnames__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! classnames */ "./node_modules/classnames/index.js");
+/* harmony import */ var classnames__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(classnames__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_2__);
+var _jsxFileName = "C:\\Users\\Gerain\\Documents\\Univer\\DB\\StockControl\\client\\src\\components\\common\\InputGroup.js";
+
+
+
+
+var InputGroup = function InputGroup(_ref) {
+  var name = _ref.name,
+      placeholder = _ref.placeholder,
+      value = _ref.value,
+      error = _ref.error,
+      icon = _ref.icon,
+      type = _ref.type,
+      onChange = _ref.onChange;
+  var iconForInput;
+
+  if (icon) {
+    iconForInput = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      className: "input-group-prepend",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 17
+      },
+      __self: this
+    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      className: "input-group-text",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 18
+      },
+      __self: this
+    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
+      className: icon,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 19
+      },
+      __self: this
+    })));
+  }
+
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "input-group mb-3",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 25
+    },
+    __self: this
+  }, iconForInput, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
+    type: type,
+    className: classnames__WEBPACK_IMPORTED_MODULE_1___default()('form-control form-control-lg', {
+      'is-invalid': error
+    }),
+    placeholder: placeholder,
+    name: name,
+    value: value,
+    onChange: onChange,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 27
+    },
+    __self: this
+  }), error && react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "invalid-feedback",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 37
+    },
+    __self: this
+  }, error));
+};
+
+InputGroup.propTypes = {
+  name: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.string.isRequired,
+  placeholder: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.string,
+  value: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.string.isRequired,
+  icon: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.string,
+  error: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.string,
+  type: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.string.isRequired,
+  onChange: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.func.isRequired
+};
+InputGroup.defaultProps = {
+  type: 'text'
+};
+/* harmony default export */ __webpack_exports__["default"] = (InputGroup);
+
+/***/ }),
+
+/***/ "./src/components/common/TextAreaGroup.js":
+/*!************************************************!*\
+  !*** ./src/components/common/TextAreaGroup.js ***!
+  \************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_1__);
+var _jsxFileName = "C:\\Users\\Gerain\\Documents\\Univer\\DB\\StockControl\\client\\src\\components\\common\\TextAreaGroup.js";
+
+
+
+var TextAreaGroup = function TextAreaGroup(_ref) {
+  var name = _ref.name,
+      placeholder = _ref.placeholder,
+      value = _ref.value,
+      onChange = _ref.onChange;
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "form-group",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 6
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("textarea", {
+    className: "form-control form-control-lg plr-4",
+    placeholder: placeholder,
+    name: name,
+    value: value,
+    onChange: onChange,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 7
+    },
+    __self: this
+  }));
+};
+
+TextAreaGroup.propTypes = {
+  name: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.string.isRequired,
+  placeholder: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.string,
+  value: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.string.isRequired,
+  onChange: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.func.isRequired
+};
+/* harmony default export */ __webpack_exports__["default"] = (TextAreaGroup);
+
+/***/ }),
+
+/***/ "./src/components/img/17.JPG":
+/*!***********************************!*\
+  !*** ./src/components/img/17.JPG ***!
+  \***********************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "static/media/17.3073510a.JPG";
+
+/***/ }),
+
+/***/ "./src/components/img/supplierrelationships.jpg":
+/*!******************************************************!*\
+  !*** ./src/components/img/supplierrelationships.jpg ***!
+  \******************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "static/media/supplierrelationships.6aa5e8be.jpg";
+
+/***/ }),
+
+/***/ "./src/components/invoices/InvoiceMenu.js":
+/*!************************************************!*\
+  !*** ./src/components/invoices/InvoiceMenu.js ***!
+  \************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return InvoiceMenu; });
+/* harmony import */ var C_Users_Gerain_Documents_Univer_DB_StockControl_client_node_modules_babel_runtime_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/classCallCheck */ "./node_modules/@babel/runtime/helpers/esm/classCallCheck.js");
+/* harmony import */ var C_Users_Gerain_Documents_Univer_DB_StockControl_client_node_modules_babel_runtime_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/createClass */ "./node_modules/@babel/runtime/helpers/esm/createClass.js");
+/* harmony import */ var C_Users_Gerain_Documents_Univer_DB_StockControl_client_node_modules_babel_runtime_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/possibleConstructorReturn */ "./node_modules/@babel/runtime/helpers/esm/possibleConstructorReturn.js");
+/* harmony import */ var C_Users_Gerain_Documents_Univer_DB_StockControl_client_node_modules_babel_runtime_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/getPrototypeOf */ "./node_modules/@babel/runtime/helpers/esm/getPrototypeOf.js");
+/* harmony import */ var C_Users_Gerain_Documents_Univer_DB_StockControl_client_node_modules_babel_runtime_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/inherits */ "./node_modules/@babel/runtime/helpers/esm/inherits.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_5__);
+
+
+
+
+
+var _jsxFileName = "C:\\Users\\Gerain\\Documents\\Univer\\DB\\StockControl\\client\\src\\components\\invoices\\InvoiceMenu.js";
+
+
+var InvoiceMenu =
+/*#__PURE__*/
+function (_Component) {
+  Object(C_Users_Gerain_Documents_Univer_DB_StockControl_client_node_modules_babel_runtime_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_4__["default"])(InvoiceMenu, _Component);
+
+  function InvoiceMenu() {
+    Object(C_Users_Gerain_Documents_Univer_DB_StockControl_client_node_modules_babel_runtime_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_0__["default"])(this, InvoiceMenu);
+
+    return Object(C_Users_Gerain_Documents_Univer_DB_StockControl_client_node_modules_babel_runtime_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_2__["default"])(this, Object(C_Users_Gerain_Documents_Univer_DB_StockControl_client_node_modules_babel_runtime_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_3__["default"])(InvoiceMenu).apply(this, arguments));
+  }
+
+  Object(C_Users_Gerain_Documents_Univer_DB_StockControl_client_node_modules_babel_runtime_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_1__["default"])(InvoiceMenu, [{
+    key: "render",
+    value: function render() {
+      return react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("div", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 6
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("h1", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 7
+        },
+        __self: this
+      }, "Invoice main menu"));
+    }
+  }]);
+
+  return InvoiceMenu;
+}(react__WEBPACK_IMPORTED_MODULE_5__["Component"]);
+
+
+
+/***/ }),
+
+/***/ "./src/components/layouts/Footer.js":
+/*!******************************************!*\
+  !*** ./src/components/layouts/Footer.js ***!
+  \******************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+var _jsxFileName = "C:\\Users\\Gerain\\Documents\\Univer\\DB\\StockControl\\client\\src\\components\\layouts\\Footer.js";
+
+/* harmony default export */ __webpack_exports__["default"] = (function () {
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("footer", {
+    className: "bg-dark footer text-white mt-5 p-4 text-center",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 5
+    },
+    __self: this
+  }, "Copyright \xA9 ", new Date().getFullYear(), " Germans Gruseckis");
+});
+
+/***/ }),
+
+/***/ "./src/components/layouts/Landing.js":
+/*!*******************************************!*\
+  !*** ./src/components/layouts/Landing.js ***!
+  \*******************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return Landing; });
+/* harmony import */ var C_Users_Gerain_Documents_Univer_DB_StockControl_client_node_modules_babel_runtime_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/classCallCheck */ "./node_modules/@babel/runtime/helpers/esm/classCallCheck.js");
+/* harmony import */ var C_Users_Gerain_Documents_Univer_DB_StockControl_client_node_modules_babel_runtime_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/createClass */ "./node_modules/@babel/runtime/helpers/esm/createClass.js");
+/* harmony import */ var C_Users_Gerain_Documents_Univer_DB_StockControl_client_node_modules_babel_runtime_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/possibleConstructorReturn */ "./node_modules/@babel/runtime/helpers/esm/possibleConstructorReturn.js");
+/* harmony import */ var C_Users_Gerain_Documents_Univer_DB_StockControl_client_node_modules_babel_runtime_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/getPrototypeOf */ "./node_modules/@babel/runtime/helpers/esm/getPrototypeOf.js");
+/* harmony import */ var C_Users_Gerain_Documents_Univer_DB_StockControl_client_node_modules_babel_runtime_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/inherits */ "./node_modules/@babel/runtime/helpers/esm/inherits.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var _common_IconButton__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../common/IconButton */ "./src/components/common/IconButton.js");
+
+
+
+
+
+var _jsxFileName = "C:\\Users\\Gerain\\Documents\\Univer\\DB\\StockControl\\client\\src\\components\\layouts\\Landing.js";
+
+
+
+var Landing =
+/*#__PURE__*/
+function (_Component) {
+  Object(C_Users_Gerain_Documents_Univer_DB_StockControl_client_node_modules_babel_runtime_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_4__["default"])(Landing, _Component);
+
+  function Landing() {
+    Object(C_Users_Gerain_Documents_Univer_DB_StockControl_client_node_modules_babel_runtime_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_0__["default"])(this, Landing);
+
+    return Object(C_Users_Gerain_Documents_Univer_DB_StockControl_client_node_modules_babel_runtime_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_2__["default"])(this, Object(C_Users_Gerain_Documents_Univer_DB_StockControl_client_node_modules_babel_runtime_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_3__["default"])(Landing).apply(this, arguments));
+  }
+
+  Object(C_Users_Gerain_Documents_Univer_DB_StockControl_client_node_modules_babel_runtime_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_1__["default"])(Landing, [{
+    key: "render",
+    value: function render() {
+      return react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("div", {
+        className: "landing",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 7
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("div", {
+        className: "dark-overlay landing-inner text-light",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 8
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("div", {
+        className: "container",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 9
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("div", {
+        className: "row",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 10
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("div", {
+        className: "col-md-12 text-center",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 11
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("h1", {
+        className: "display-3 mb-4",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 12
+        },
+        __self: this
+      }, "Stock Control System"), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("p", {
+        className: "lead",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 13
+        },
+        __self: this
+      }, "Select what you want to do."), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(_common_IconButton__WEBPACK_IMPORTED_MODULE_6__["default"], {
+        linkTo: "/cash-register",
+        iconSize: "fa-3x",
+        iconName: "fas fa-hand-holding-usd",
+        buttonText: "Cash Register",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 14
+        },
+        __self: this
+      }), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("hr", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 20
+        },
+        __self: this
+      }), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(_common_IconButton__WEBPACK_IMPORTED_MODULE_6__["default"], {
+        linkTo: "/invoices",
+        additionalClasses: "mr-2",
+        iconSize: "fa-2x",
+        iconName: "fas fa-file-invoice-dollar",
+        buttonText: "Invoices",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 21
+        },
+        __self: this
+      }), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(_common_IconButton__WEBPACK_IMPORTED_MODULE_6__["default"], {
+        linkTo: "/suppliers",
+        iconSize: "fa-2x",
+        iconName: "fas fa-truck",
+        buttonText: "Suppliers",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 28
+        },
+        __self: this
+      }), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("hr", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 34
+        },
+        __self: this
+      }), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(_common_IconButton__WEBPACK_IMPORTED_MODULE_6__["default"], {
+        linkTo: "/shops",
+        additionalClasses: "mr-2",
+        iconSize: "fa-2x",
+        iconName: "fas fa-warehouse",
+        buttonText: "Shops",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 35
+        },
+        __self: this
+      }), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(_common_IconButton__WEBPACK_IMPORTED_MODULE_6__["default"], {
+        linkTo: "/misc",
+        iconSize: "fa-2x",
+        iconName: "fab fa-stack-overflow",
+        buttonText: "Misc",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 42
+        },
+        __self: this
+      }))))));
+    }
+  }]);
+
+  return Landing;
+}(react__WEBPACK_IMPORTED_MODULE_5__["Component"]);
+
+
+
+/***/ }),
+
+/***/ "./src/components/layouts/Navbar.js":
+/*!******************************************!*\
+  !*** ./src/components/layouts/Navbar.js ***!
+  \******************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return Navbar; });
+/* harmony import */ var C_Users_Gerain_Documents_Univer_DB_StockControl_client_node_modules_babel_runtime_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/classCallCheck */ "./node_modules/@babel/runtime/helpers/esm/classCallCheck.js");
+/* harmony import */ var C_Users_Gerain_Documents_Univer_DB_StockControl_client_node_modules_babel_runtime_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/createClass */ "./node_modules/@babel/runtime/helpers/esm/createClass.js");
+/* harmony import */ var C_Users_Gerain_Documents_Univer_DB_StockControl_client_node_modules_babel_runtime_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/possibleConstructorReturn */ "./node_modules/@babel/runtime/helpers/esm/possibleConstructorReturn.js");
+/* harmony import */ var C_Users_Gerain_Documents_Univer_DB_StockControl_client_node_modules_babel_runtime_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/getPrototypeOf */ "./node_modules/@babel/runtime/helpers/esm/getPrototypeOf.js");
+/* harmony import */ var C_Users_Gerain_Documents_Univer_DB_StockControl_client_node_modules_babel_runtime_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/inherits */ "./node_modules/@babel/runtime/helpers/esm/inherits.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/es/index.js");
+
+
+
+
+
+var _jsxFileName = "C:\\Users\\Gerain\\Documents\\Univer\\DB\\StockControl\\client\\src\\components\\layouts\\Navbar.js";
+
+
+
+var Navbar =
+/*#__PURE__*/
+function (_Component) {
+  Object(C_Users_Gerain_Documents_Univer_DB_StockControl_client_node_modules_babel_runtime_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_4__["default"])(Navbar, _Component);
+
+  function Navbar() {
+    Object(C_Users_Gerain_Documents_Univer_DB_StockControl_client_node_modules_babel_runtime_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_0__["default"])(this, Navbar);
+
+    return Object(C_Users_Gerain_Documents_Univer_DB_StockControl_client_node_modules_babel_runtime_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_2__["default"])(this, Object(C_Users_Gerain_Documents_Univer_DB_StockControl_client_node_modules_babel_runtime_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_3__["default"])(Navbar).apply(this, arguments));
+  }
+
+  Object(C_Users_Gerain_Documents_Univer_DB_StockControl_client_node_modules_babel_runtime_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_1__["default"])(Navbar, [{
+    key: "render",
+    value: function render() {
+      return react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("nav", {
+        className: "navbar navbar-expand-sm navbar-dark bg-dark mb-4",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 7
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("div", {
+        className: "container",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 8
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_6__["Link"], {
+        className: "navbar-brand",
+        to: "/",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 9
+        },
+        __self: this
+      }, "Home"), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("button", {
+        className: "navbar-toggler",
+        type: "button",
+        "data-toggle": "collapse",
+        "data-target": "#mobile-nav",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 12
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("span", {
+        className: "navbar-toggler-icon",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 18
+        },
+        __self: this
+      })), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("div", {
+        className: "collapse navbar-collapse",
+        id: "mobile-nav",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 21
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("ul", {
+        className: "navbar-nav mr-auto",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 22
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("li", {
+        className: "nav-item",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 23
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_6__["Link"], {
+        className: "nav-link",
+        to: "/cash-register",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 24
+        },
+        __self: this
+      }, ' ', "Cash Register"))), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("ul", {
+        className: "navbar-nav ml-auto",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 31
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("li", {
+        className: "nav-item",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 32
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_6__["Link"], {
+        className: "nav-link",
+        to: "/add-invoice",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 33
+        },
+        __self: this
+      }, "Add Invoice")), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("li", {
+        className: "nav-item",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 37
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_6__["Link"], {
+        className: "nav-link",
+        to: "/reports",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 38
+        },
+        __self: this
+      }, "Reports"))))));
+    }
+  }]);
+
+  return Navbar;
+}(react__WEBPACK_IMPORTED_MODULE_5__["Component"]);
+
+
+
+/***/ }),
+
+/***/ "./src/components/supplier/AddSupplier.js":
+/*!************************************************!*\
+  !*** ./src/components/supplier/AddSupplier.js ***!
+  \************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var C_Users_Gerain_Documents_Univer_DB_StockControl_client_node_modules_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/defineProperty */ "./node_modules/@babel/runtime/helpers/esm/defineProperty.js");
+/* harmony import */ var C_Users_Gerain_Documents_Univer_DB_StockControl_client_node_modules_babel_runtime_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/classCallCheck */ "./node_modules/@babel/runtime/helpers/esm/classCallCheck.js");
+/* harmony import */ var C_Users_Gerain_Documents_Univer_DB_StockControl_client_node_modules_babel_runtime_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/createClass */ "./node_modules/@babel/runtime/helpers/esm/createClass.js");
+/* harmony import */ var C_Users_Gerain_Documents_Univer_DB_StockControl_client_node_modules_babel_runtime_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/possibleConstructorReturn */ "./node_modules/@babel/runtime/helpers/esm/possibleConstructorReturn.js");
+/* harmony import */ var C_Users_Gerain_Documents_Univer_DB_StockControl_client_node_modules_babel_runtime_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/getPrototypeOf */ "./node_modules/@babel/runtime/helpers/esm/getPrototypeOf.js");
+/* harmony import */ var C_Users_Gerain_Documents_Univer_DB_StockControl_client_node_modules_babel_runtime_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/inherits */ "./node_modules/@babel/runtime/helpers/esm/inherits.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_6__);
+/* harmony import */ var _common_TextAreaGroup__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../common/TextAreaGroup */ "./src/components/common/TextAreaGroup.js");
+/* harmony import */ var _common_InputGroup__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../common/InputGroup */ "./src/components/common/InputGroup.js");
+/* harmony import */ var _actions_auxActions__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../../actions/auxActions */ "./src/actions/auxActions.js");
+/* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! react-redux */ "./node_modules/react-redux/es/index.js");
+
+
+
+
+
+
+var _jsxFileName = "C:\\Users\\Gerain\\Documents\\Univer\\DB\\StockControl\\client\\src\\components\\supplier\\AddSupplier.js";
+
+
+
+
+
+
+var AddSupplier =
+/*#__PURE__*/
+function (_Component) {
+  Object(C_Users_Gerain_Documents_Univer_DB_StockControl_client_node_modules_babel_runtime_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_5__["default"])(AddSupplier, _Component);
+
+  function AddSupplier() {
+    var _this;
+
+    Object(C_Users_Gerain_Documents_Univer_DB_StockControl_client_node_modules_babel_runtime_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_1__["default"])(this, AddSupplier);
+
+    _this = Object(C_Users_Gerain_Documents_Univer_DB_StockControl_client_node_modules_babel_runtime_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_3__["default"])(this, Object(C_Users_Gerain_Documents_Univer_DB_StockControl_client_node_modules_babel_runtime_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_4__["default"])(AddSupplier).call(this));
+
+    _this.componentWillReceiveProps = function (nextProps) {
+      if (nextProps.errors) {
+        _this.setState({
+          errors: nextProps.errors
+        });
+      }
+
+      if (nextProps.address.AddressID) {
+        // console.log(nextProps.address.AddressID);
+        _this.setState({
+          addressID: nextProps.address.AddressID
+        });
+      }
+    };
+
+    _this.onChange = function (e) {
+      _this.setState(Object(C_Users_Gerain_Documents_Univer_DB_StockControl_client_node_modules_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__["default"])({}, e.target.name, e.target.value));
+    };
+
+    _this.onSubmit = function (e) {
+      e.preventDefault();
+      var address = {
+        addressLine1: _this.state.addressLine1,
+        addressLine2: _this.state.addressLine2,
+        city: _this.state.city,
+        country: _this.state.country,
+        postCode: _this.state.postCode
+      };
+      var bankDetails = {
+        bankName: _this.state.bankName,
+        accountName: _this.state.accountName,
+        iban: _this.state.iban,
+        swiftCode: _this.state.swiftCode
+      };
+
+      if (!_this.state.addressID) {
+        _this.props.createNewAddress(address, function (response) {// console.log(response);
+        });
+      }
+
+      if (!_this.state.bankDetailsID) {
+        _this.props.createNewBankDetails(bankDetails, function (response) {// console.log(response);
+        });
+      }
+    };
+
+    _this.state = {
+      companyName: '',
+      phoneNumber: '',
+      companyRegNr: '',
+      notes: '',
+      bankDetailsID: '',
+      bankName: '',
+      accountName: '',
+      iban: '',
+      swiftCode: '',
+      addressID: '',
+      addressLine1: '',
+      addressLine2: '',
+      city: '',
+      country: '',
+      postCode: '',
+      errors: {}
+    };
+    return _this;
+  }
+
+  Object(C_Users_Gerain_Documents_Univer_DB_StockControl_client_node_modules_babel_runtime_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_2__["default"])(AddSupplier, [{
+    key: "render",
+    value: function render() {
+      var address = this.state.errors.address ? this.state.errors.address : {};
+      var bankDetails = this.state.errors.bankDetails ? this.state.errors.bankDetails : {};
+      return react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("div", {
+        className: "container text-center text-dark",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 81
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("h2", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 82
+        },
+        __self: this
+      }, "Add Supplier"), react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("form", {
+        onSubmit: this.onSubmit,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 83
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("h4", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 84
+        },
+        __self: this
+      }, "Supplier details"), react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("div", {
+        className: "row",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 85
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("div", {
+        className: "col-md-12 col-lg-4 mt-3",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 86
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(_common_InputGroup__WEBPACK_IMPORTED_MODULE_8__["default"], {
+        value: this.state.companyName,
+        name: "companyName",
+        onChange: this.onChange,
+        placeholder: "Supplier company name *",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 87
+        },
+        __self: this
+      })), react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("div", {
+        className: "col-md-12 col-lg-4 mt-3",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 94
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(_common_InputGroup__WEBPACK_IMPORTED_MODULE_8__["default"], {
+        name: "phoneNumber",
+        value: this.state.phoneNumber,
+        onChange: this.onChange,
+        placeholder: "Contact phone number *",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 95
+        },
+        __self: this
+      })), react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("div", {
+        className: "col-md-12 col-lg-4 mt-3",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 102
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(_common_InputGroup__WEBPACK_IMPORTED_MODULE_8__["default"], {
+        name: "companyRegNr",
+        value: this.state.companyRegNr,
+        onChange: this.onChange,
+        placeholder: "Company registration Nr *",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 103
+        },
+        __self: this
+      })), react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("div", {
+        className: "col-md-12 mt-3",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 110
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(_common_TextAreaGroup__WEBPACK_IMPORTED_MODULE_7__["default"], {
+        name: "notes",
+        value: this.state.notes,
+        onChange: this.onChange,
+        placeholder: "Additional notes about supplier",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 111
+        },
+        __self: this
+      }))), react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("h4", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 119
+        },
+        __self: this
+      }, "Supplier address"), react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("div", {
+        className: "row",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 120
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("div", {
+        className: "col-md-12 col-lg-6 mt-3",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 121
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(_common_InputGroup__WEBPACK_IMPORTED_MODULE_8__["default"], {
+        name: "addressLine1",
+        value: this.state.addressLine1,
+        onChange: this.onChange,
+        placeholder: "Address Line 1*",
+        error: address.addressLine1,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 122
+        },
+        __self: this
+      })), react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("div", {
+        className: "col-md-12 col-lg-6 mt-3",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 130
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(_common_InputGroup__WEBPACK_IMPORTED_MODULE_8__["default"], {
+        name: "addressLine2",
+        value: this.state.addressLine2,
+        onChange: this.onChange,
+        placeholder: "Address Line 2",
+        error: address.addressLine2,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 131
+        },
+        __self: this
+      })), react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("div", {
+        className: "col-md-12 col-lg-6 mt-3",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 139
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(_common_InputGroup__WEBPACK_IMPORTED_MODULE_8__["default"], {
+        name: "city",
+        value: this.state.city,
+        onChange: this.onChange,
+        placeholder: "City/Town *",
+        error: address.city,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 140
+        },
+        __self: this
+      })), react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("div", {
+        className: "col-md-12 col-lg-6 mt-3",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 148
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(_common_InputGroup__WEBPACK_IMPORTED_MODULE_8__["default"], {
+        name: "country",
+        value: this.state.country,
+        onChange: this.onChange,
+        placeholder: "Country *",
+        error: address.country,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 149
+        },
+        __self: this
+      })), react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("div", {
+        className: "col-md-12 col-lg-6 mt-3",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 157
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(_common_InputGroup__WEBPACK_IMPORTED_MODULE_8__["default"], {
+        name: "postCode",
+        value: this.state.postCode,
+        onChange: this.onChange,
+        placeholder: "Post Code *",
+        error: address.postCode,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 158
+        },
+        __self: this
+      }))), react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("h4", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 167
+        },
+        __self: this
+      }, "Supplier bank details"), react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("div", {
+        className: "row",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 168
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("div", {
+        className: "col-md-12 col-lg-6 mt-3",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 169
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(_common_InputGroup__WEBPACK_IMPORTED_MODULE_8__["default"], {
+        name: "bankName",
+        value: this.state.bankName,
+        onChange: this.onChange,
+        placeholder: "Bank Name *",
+        error: bankDetails.bankName,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 170
+        },
+        __self: this
+      })), react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("div", {
+        className: "col-md-12 col-lg-6 mt-3",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 178
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(_common_InputGroup__WEBPACK_IMPORTED_MODULE_8__["default"], {
+        name: "accountName",
+        value: this.state.accountName,
+        onChange: this.onChange,
+        placeholder: "Account Name *",
+        error: bankDetails.accountName,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 179
+        },
+        __self: this
+      })), react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("div", {
+        className: "col-md-12 col-lg-6 mt-3",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 187
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(_common_InputGroup__WEBPACK_IMPORTED_MODULE_8__["default"], {
+        name: "iban",
+        value: this.state.iban,
+        onChange: this.onChange,
+        placeholder: "Account number/IBAN *",
+        error: bankDetails.iban,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 188
+        },
+        __self: this
+      })), react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("div", {
+        className: "col-md-12 col-lg-6 mt-3",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 196
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(_common_InputGroup__WEBPACK_IMPORTED_MODULE_8__["default"], {
+        name: "swiftCode",
+        value: this.state.swiftCode,
+        onChange: this.onChange,
+        placeholder: "Swift Code *",
+        error: bankDetails.swiftCode,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 197
+        },
+        __self: this
+      }))), react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("small", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 206
+        },
+        __self: this
+      }, " Fields marked with * are required"), react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("input", {
+        type: "submit",
+        className: "btn btn-info btn-block mt-4",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 207
+        },
+        __self: this
+      })));
+    }
+  }]);
+
+  return AddSupplier;
+}(react__WEBPACK_IMPORTED_MODULE_6__["Component"]);
+
+var mapStateToProps = function mapStateToProps(state) {
+  return {
+    errors: state.errors,
+    address: state.address
+  };
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (Object(react_redux__WEBPACK_IMPORTED_MODULE_10__["connect"])(mapStateToProps, {
+  createNewAddress: _actions_auxActions__WEBPACK_IMPORTED_MODULE_9__["createNewAddress"],
+  createNewBankDetails: _actions_auxActions__WEBPACK_IMPORTED_MODULE_9__["createNewBankDetails"]
+})(AddSupplier));
+
+/***/ }),
+
+/***/ "./src/components/suppliers/SuppliersOptions.js":
+/*!******************************************************!*\
+  !*** ./src/components/suppliers/SuppliersOptions.js ***!
+  \******************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return SuppliersOptions; });
+/* harmony import */ var C_Users_Gerain_Documents_Univer_DB_StockControl_client_node_modules_babel_runtime_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/classCallCheck */ "./node_modules/@babel/runtime/helpers/esm/classCallCheck.js");
+/* harmony import */ var C_Users_Gerain_Documents_Univer_DB_StockControl_client_node_modules_babel_runtime_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/createClass */ "./node_modules/@babel/runtime/helpers/esm/createClass.js");
+/* harmony import */ var C_Users_Gerain_Documents_Univer_DB_StockControl_client_node_modules_babel_runtime_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/possibleConstructorReturn */ "./node_modules/@babel/runtime/helpers/esm/possibleConstructorReturn.js");
+/* harmony import */ var C_Users_Gerain_Documents_Univer_DB_StockControl_client_node_modules_babel_runtime_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/getPrototypeOf */ "./node_modules/@babel/runtime/helpers/esm/getPrototypeOf.js");
+/* harmony import */ var C_Users_Gerain_Documents_Univer_DB_StockControl_client_node_modules_babel_runtime_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/inherits */ "./node_modules/@babel/runtime/helpers/esm/inherits.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var semantic_ui_react__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! semantic-ui-react */ "./node_modules/semantic-ui-react/dist/es/index.js");
+/* harmony import */ var _common_IconButton__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../common/IconButton */ "./src/components/common/IconButton.js");
+
+
+
+
+
+var _jsxFileName = "C:\\Users\\Gerain\\Documents\\Univer\\DB\\StockControl\\client\\src\\components\\suppliers\\SuppliersOptions.js";
+
+
+
+
+var SuppliersOptions =
+/*#__PURE__*/
+function (_Component) {
+  Object(C_Users_Gerain_Documents_Univer_DB_StockControl_client_node_modules_babel_runtime_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_4__["default"])(SuppliersOptions, _Component);
+
+  function SuppliersOptions() {
+    Object(C_Users_Gerain_Documents_Univer_DB_StockControl_client_node_modules_babel_runtime_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_0__["default"])(this, SuppliersOptions);
+
+    return Object(C_Users_Gerain_Documents_Univer_DB_StockControl_client_node_modules_babel_runtime_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_2__["default"])(this, Object(C_Users_Gerain_Documents_Univer_DB_StockControl_client_node_modules_babel_runtime_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_3__["default"])(SuppliersOptions).apply(this, arguments));
+  }
+
+  Object(C_Users_Gerain_Documents_Univer_DB_StockControl_client_node_modules_babel_runtime_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_1__["default"])(SuppliersOptions, [{
+    key: "render",
+    value: function render() {
+      return react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("div", {
+        className: "suppliers text-center",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 8
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(semantic_ui_react__WEBPACK_IMPORTED_MODULE_6__["Header"], {
+        as: "h2",
+        className: "pt-5 text-light",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 9
+        },
+        __self: this
+      }, "Supplier Options:"), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("hr", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 12
+        },
+        __self: this
+      }), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(_common_IconButton__WEBPACK_IMPORTED_MODULE_7__["default"], {
+        linkTo: "/suppliers/find",
+        iconSize: "fa-2x",
+        additionalClasses: "mr-2",
+        iconName: "fas fa-search",
+        buttonText: "Find Supplier",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 13
+        },
+        __self: this
+      }), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(_common_IconButton__WEBPACK_IMPORTED_MODULE_7__["default"], {
+        linkTo: "/suppliers/add",
+        iconSize: "fa-2x",
+        additionalClasses: "mr-2",
+        iconName: "fas fa-plus-circle",
+        buttonText: "Add supplier",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 20
+        },
+        __self: this
+      }), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(_common_IconButton__WEBPACK_IMPORTED_MODULE_7__["default"], {
+        linkTo: "/suppliers/browse",
+        iconSize: "fa-2x",
+        iconName: "fas fa-address-book",
+        buttonText: "Browse all",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 27
+        },
+        __self: this
+      }));
+    }
+  }]);
+
+  return SuppliersOptions;
+}(react__WEBPACK_IMPORTED_MODULE_5__["Component"]);
+
+
+
+/***/ }),
+
+/***/ "./src/index.css":
+/*!***********************!*\
+  !*** ./src/index.css ***!
+  \***********************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+
+var content = __webpack_require__(/*! !../node_modules/css-loader??ref--6-oneOf-3-1!../node_modules/postcss-loader/src??postcss!./index.css */ "./node_modules/css-loader/index.js?!./node_modules/postcss-loader/src/index.js?!./src/index.css");
+
+if(typeof content === 'string') content = [[module.i, content, '']];
+
+var transform;
+var insertInto;
+
+
+
+var options = {"hmr":true}
+
+options.transform = transform
+options.insertInto = undefined;
+
+var update = __webpack_require__(/*! ../node_modules/style-loader/lib/addStyles.js */ "./node_modules/style-loader/lib/addStyles.js")(content, options);
+
+if(content.locals) module.exports = content.locals;
+
+if(true) {
+	module.hot.accept(/*! !../node_modules/css-loader??ref--6-oneOf-3-1!../node_modules/postcss-loader/src??postcss!./index.css */ "./node_modules/css-loader/index.js?!./node_modules/postcss-loader/src/index.js?!./src/index.css", function() {
+		var newContent = __webpack_require__(/*! !../node_modules/css-loader??ref--6-oneOf-3-1!../node_modules/postcss-loader/src??postcss!./index.css */ "./node_modules/css-loader/index.js?!./node_modules/postcss-loader/src/index.js?!./src/index.css");
+
+		if(typeof newContent === 'string') newContent = [[module.i, newContent, '']];
+
+		var locals = (function(a, b) {
+			var key, idx = 0;
+
+			for(key in a) {
+				if(!b || a[key] !== b[key]) return false;
+				idx++;
+			}
+
+			for(key in b) idx--;
+
+			return idx === 0;
+		}(content.locals, newContent.locals));
+
+		if(!locals) throw new Error('Aborting CSS HMR due to changed css-modules locals.');
+
+		update(newContent);
+	});
+
+	module.hot.dispose(function() { update(); });
+}
+
+/***/ }),
+
+/***/ "./src/index.js":
+/*!**********************!*\
+  !*** ./src/index.js ***!
+  \**********************/
+/*! no exports provided */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-dom */ "./node_modules/react-dom/index.js");
+/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react_dom__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _index_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./index.css */ "./src/index.css");
+/* harmony import */ var _index_css__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_index_css__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _App__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./App */ "./src/App.js");
+/* harmony import */ var _serviceWorker__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./serviceWorker */ "./src/serviceWorker.js");
+var _jsxFileName = "C:\\Users\\Gerain\\Documents\\Univer\\DB\\StockControl\\client\\src\\index.js";
+
+
+
+
+
+react_dom__WEBPACK_IMPORTED_MODULE_1___default.a.render(react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_App__WEBPACK_IMPORTED_MODULE_3__["default"], {
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 7
+  },
+  __self: undefined
+}), document.getElementById('root')); // If you want your app to work offline and load faster, you can change
+// unregister() to register() below. Note this comes with some pitfalls.
+// Learn more about service workers: http://bit.ly/CRA-PWA
+
+_serviceWorker__WEBPACK_IMPORTED_MODULE_4__["unregister"]();
+
+/***/ }),
+
+/***/ "./src/reducers/addressReducer.js":
+/*!****************************************!*\
+  !*** ./src/reducers/addressReducer.js ***!
+  \****************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var C_Users_Gerain_Documents_Univer_DB_StockControl_client_node_modules_babel_runtime_helpers_esm_objectSpread__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/objectSpread */ "./node_modules/@babel/runtime/helpers/esm/objectSpread.js");
+/* harmony import */ var _actions_types__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../actions/types */ "./src/actions/types.js");
+
+
+var initialState = {};
+/* harmony default export */ __webpack_exports__["default"] = (function () {
+  var state = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : initialState;
+  var action = arguments.length > 1 ? arguments[1] : undefined;
+
+  switch (action.type) {
+    case _actions_types__WEBPACK_IMPORTED_MODULE_1__["GET_ADDRESS"]:
+      console.log(action.payload);
+      return Object(C_Users_Gerain_Documents_Univer_DB_StockControl_client_node_modules_babel_runtime_helpers_esm_objectSpread__WEBPACK_IMPORTED_MODULE_0__["default"])({}, state, action.payload.address);
+
+    default:
+      return state;
+  }
+});
+
+/***/ }),
+
+/***/ "./src/reducers/errorReducer.js":
+/*!**************************************!*\
+  !*** ./src/reducers/errorReducer.js ***!
+  \**************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var C_Users_Gerain_Documents_Univer_DB_StockControl_client_node_modules_babel_runtime_helpers_esm_objectSpread__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/objectSpread */ "./node_modules/@babel/runtime/helpers/esm/objectSpread.js");
+/* harmony import */ var _actions_types__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../actions/types */ "./src/actions/types.js");
+
+
+var initialState = {
+  address: {},
+  bankDetails: {}
+};
+/* harmony default export */ __webpack_exports__["default"] = (function () {
+  var state = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : initialState;
+  var action = arguments.length > 1 ? arguments[1] : undefined;
+  var newState = {};
+
+  switch (action.type) {
+    case _actions_types__WEBPACK_IMPORTED_MODULE_1__["TEST_DISPATCH"]:
+      return {
+        data: action.payload
+      };
+
+    case _actions_types__WEBPACK_IMPORTED_MODULE_1__["GET_ERRORS_ADDRESS"]:
+      newState = Object(C_Users_Gerain_Documents_Univer_DB_StockControl_client_node_modules_babel_runtime_helpers_esm_objectSpread__WEBPACK_IMPORTED_MODULE_0__["default"])({}, state);
+      newState.address = action.payload.errors;
+      return Object(C_Users_Gerain_Documents_Univer_DB_StockControl_client_node_modules_babel_runtime_helpers_esm_objectSpread__WEBPACK_IMPORTED_MODULE_0__["default"])({}, newState);
+
+    case _actions_types__WEBPACK_IMPORTED_MODULE_1__["GET_ERRORS_BANK_DETAILS"]:
+      newState = Object(C_Users_Gerain_Documents_Univer_DB_StockControl_client_node_modules_babel_runtime_helpers_esm_objectSpread__WEBPACK_IMPORTED_MODULE_0__["default"])({}, state);
+      newState.bankDetails = action.payload.errors;
+      return Object(C_Users_Gerain_Documents_Univer_DB_StockControl_client_node_modules_babel_runtime_helpers_esm_objectSpread__WEBPACK_IMPORTED_MODULE_0__["default"])({}, newState);
+
+    default:
+      return state;
+  }
+});
+
+/***/ }),
+
+/***/ "./src/reducers/index.js":
+/*!*******************************!*\
+  !*** ./src/reducers/index.js ***!
+  \*******************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var redux__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! redux */ "./node_modules/redux/es/redux.js");
+/* harmony import */ var _errorReducer__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./errorReducer */ "./src/reducers/errorReducer.js");
+/* harmony import */ var _addressReducer__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./addressReducer */ "./src/reducers/addressReducer.js");
+
+
+
+/* harmony default export */ __webpack_exports__["default"] = (Object(redux__WEBPACK_IMPORTED_MODULE_0__["combineReducers"])({
+  address: _addressReducer__WEBPACK_IMPORTED_MODULE_2__["default"],
+  errors: _errorReducer__WEBPACK_IMPORTED_MODULE_1__["default"]
+}));
+
+/***/ }),
+
+/***/ "./src/serviceWorker.js":
+/*!******************************!*\
+  !*** ./src/serviceWorker.js ***!
+  \******************************/
+/*! exports provided: register, unregister */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "register", function() { return register; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "unregister", function() { return unregister; });
+// This optional code is used to register a service worker.
+// register() is not called by default.
+// This lets the app load faster on subsequent visits in production, and gives
+// it offline capabilities. However, it also means that developers (and users)
+// will only see deployed updates on subsequent visits to a page, after all the
+// existing tabs open on the page have been closed, since previously cached
+// resources are updated in the background.
+// To learn more about the benefits of this model and instructions on how to
+// opt-in, read http://bit.ly/CRA-PWA
+var isLocalhost = Boolean(window.location.hostname === 'localhost' || // [::1] is the IPv6 localhost address.
+window.location.hostname === '[::1]' || // 127.0.0.1/8 is considered localhost for IPv4.
+window.location.hostname.match(/^127(?:\.(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)){3}$/));
+function register(config) {
+  if (false) { var publicUrl; }
+}
+
+function registerValidSW(swUrl, config) {
+  navigator.serviceWorker.register(swUrl).then(function (registration) {
+    registration.onupdatefound = function () {
+      var installingWorker = registration.installing;
+
+      if (installingWorker == null) {
+        return;
+      }
+
+      installingWorker.onstatechange = function () {
+        if (installingWorker.state === 'installed') {
+          if (navigator.serviceWorker.controller) {
+            // At this point, the updated precached content has been fetched,
+            // but the previous service worker will still serve the older
+            // content until all client tabs are closed.
+            console.log('New content is available and will be used when all ' + 'tabs for this page are closed. See http://bit.ly/CRA-PWA.'); // Execute callback
+
+            if (config && config.onUpdate) {
+              config.onUpdate(registration);
+            }
+          } else {
+            // At this point, everything has been precached.
+            // It's the perfect time to display a
+            // "Content is cached for offline use." message.
+            console.log('Content is cached for offline use.'); // Execute callback
+
+            if (config && config.onSuccess) {
+              config.onSuccess(registration);
+            }
+          }
+        }
+      };
+    };
+  }).catch(function (error) {
+    console.error('Error during service worker registration:', error);
+  });
+}
+
+function checkValidServiceWorker(swUrl, config) {
+  // Check if the service worker can be found. If it can't reload the page.
+  fetch(swUrl).then(function (response) {
+    // Ensure service worker exists, and that we really are getting a JS file.
+    var contentType = response.headers.get('content-type');
+
+    if (response.status === 404 || contentType != null && contentType.indexOf('javascript') === -1) {
+      // No service worker found. Probably a different app. Reload the page.
+      navigator.serviceWorker.ready.then(function (registration) {
+        registration.unregister().then(function () {
+          window.location.reload();
+        });
+      });
+    } else {
+      // Service worker found. Proceed as normal.
+      registerValidSW(swUrl, config);
+    }
+  }).catch(function () {
+    console.log('No internet connection found. App is running in offline mode.');
+  });
+}
+
+function unregister() {
+  if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.ready.then(function (registration) {
+      registration.unregister();
+    });
+  }
+}
+
+/***/ }),
+
+/***/ "./src/store.js":
+/*!**********************!*\
+  !*** ./src/store.js ***!
+  \**********************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var redux__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! redux */ "./node_modules/redux/es/redux.js");
+/* harmony import */ var redux_thunk__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! redux-thunk */ "./node_modules/redux-thunk/es/index.js");
+/* harmony import */ var _reducers__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./reducers */ "./src/reducers/index.js");
+
+
+
+var initialState = {};
+var middleware = [redux_thunk__WEBPACK_IMPORTED_MODULE_1__["default"]];
+var store = Object(redux__WEBPACK_IMPORTED_MODULE_0__["createStore"])(_reducers__WEBPACK_IMPORTED_MODULE_2__["default"], initialState, Object(redux__WEBPACK_IMPORTED_MODULE_0__["compose"])(redux__WEBPACK_IMPORTED_MODULE_0__["applyMiddleware"].apply(void 0, middleware), window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()));
+/* harmony default export */ __webpack_exports__["default"] = (store);
+
+/***/ }),
+
+/***/ 0:
+/*!**********************************************************************************!*\
+  !*** multi ./node_modules/react-dev-utils/webpackHotDevClient.js ./src/index.js ***!
+  \**********************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+__webpack_require__(/*! C:\Users\Gerain\Documents\Univer\DB\StockControl\client\node_modules\react-dev-utils\webpackHotDevClient.js */"./node_modules/react-dev-utils/webpackHotDevClient.js");
+module.exports = __webpack_require__(/*! C:\Users\Gerain\Documents\Univer\DB\StockControl\client\src\index.js */"./src/index.js");
+
+
+/***/ })
+
+},[[0,"runtime~main",0]]]);
+//# sourceMappingURL=main.chunk.js.map
